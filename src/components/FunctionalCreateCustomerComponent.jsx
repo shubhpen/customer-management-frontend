@@ -9,7 +9,7 @@ function FunctionalCreateCustomerComponent() {
     const navigate = useNavigate();
     const [customer, setCustomer] = useState({
                 name: '',
-                contact: '',
+                phone_number: '',
                 address: '',
                 bill_ammount: '',
                 bill_date: ''
@@ -26,7 +26,7 @@ function FunctionalCreateCustomerComponent() {
         
         axios.post(CUSTOMER_API_BASE_URL,{
             name: customer.name,
-            contact: customer.contact,
+            phone_number: customer.phone_number,
             address: customer.address,
             bill_ammount: customer.bill_ammount,
             bill_date: customer.bill_date
@@ -53,8 +53,8 @@ function FunctionalCreateCustomerComponent() {
                                     
                                     <div className='form-group'>    
                                         <lable>Contact: </lable>
-                                        <input placeholder='Contact' id='contact' className='form-control'
-                                          value={customer.contact}   onChange={(e)=>{changeHandler(e)}}/>
+                                        <input placeholder='Contact' id='phone_number' className='form-control'
+                                          value={customer.phone_number}   onChange={(e)=>{changeHandler(e)}}/>
                                     </div>
                                     <div className='form-group'>
                                         <lable>Address: </lable>
