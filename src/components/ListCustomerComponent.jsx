@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
-function FuctionalListCustomerComponent(){
+function ListCustomerComponent(){
     
     const CUSTOMER_API_BASE_URL= "http://localhost:8080/api/v1/customers";
     let idParam = useParams();
@@ -77,4 +77,4 @@ function FuctionalListCustomerComponent(){
         )
 }
 
-export default FuctionalListCustomerComponent;
+export default ListCustomerComponent;

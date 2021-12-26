@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function FunctionalCreateCustomerComponent() {
+function CreateCustomerComponent() {
 
     const CUSTOMER_API_BASE_URL= "http://localhost:8080/api/v1/customers";
     const navigate = useNavigate();
@@ -82,4 +82,4 @@ function FunctionalCreateCustomerComponent() {
     );
 }
 
-export default FunctionalCreateCustomerComponent;
+export default CreateCustomerComponent;

@@ -1,18 +1,17 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-function FunctionalViewCustomerComponent(props) {
+function ViewCustomerComponent(props) {
 
     const CUSTOMER_API_BASE_URL= "http://localhost:8080/api/v1/customers";
-    const navigate = useNavigate();
     const idParam = useParams();
 
     const [customer, setCustomer] = useState({
                 id: '',
                 name: '',
-                contact: '',
+                phone_number: '',
                 address: '',
                 bill_ammount: '',
                 bill_date: ''
@@ -36,7 +35,7 @@ function FunctionalViewCustomerComponent(props) {
                     </div>
 
                     <div className='row'>
-                        <label>Customer Contact: {customer.contact}</label>
+                        <label>Customer Contact: {customer.phone_number}</label>
                     </div>
 
                     <div className='row'>
@@ -56,4 +55,4 @@ function FunctionalViewCustomerComponent(props) {
     );
 }
 
-export default FunctionalViewCustomerComponent;
+export default ViewCustomerComponent;

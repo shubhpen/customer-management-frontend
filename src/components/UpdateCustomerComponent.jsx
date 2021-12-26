@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
-function FunctionalUpdateCustomerComponent() {
+function UpdateCustomerComponent() {
 
     const idParam = useParams();
     const CUSTOMER_API_BASE_URL= "http://localhost:8080/api/v1/customers";
@@ -84,4 +84,4 @@ function FunctionalUpdateCustomerComponent() {
     );
 }
 
-export default FunctionalUpdateCustomerComponent;
+export default UpdateCustomerComponent;
