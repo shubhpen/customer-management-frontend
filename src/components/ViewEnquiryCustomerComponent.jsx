@@ -25,14 +25,14 @@ function ViewEnquirycustomerComponent(props) {
     return (
         <div>
             <div className='card col-md-6 offset-md-3'>
-                <h3>View enquirycustomer Details</h3>
+                <h3>View Enquirycustomer Details</h3>
                 <div className='card-body'>
                     <div className='row'>
-                        <label>enquirycustomer Name: {enquirycustomer.name}</label>
+                        <label>Customer Name: {enquirycustomer.name}</label>
                     </div>
 
                     <div className='row'>
-                        <label>enquirycustomer Contact: {enquirycustomer.phone_number}</label>
+                        <label>Customer Contact: {enquirycustomer.phone_number}</label>
                     </div>
                 </div>
             </div>
